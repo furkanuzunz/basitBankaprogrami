@@ -6,6 +6,9 @@
 #include <time.h> 
 
 
+
+  
+
    float bakiyeler[10]={500,600};
 
 
