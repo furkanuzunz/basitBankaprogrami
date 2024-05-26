@@ -6,12 +6,7 @@
 #include <time.h> 
 
 
-
-  
-
    float bakiyeler[10]={500,600};
-
-
 
 
 void hesaplar(int hesapno[],int hesapSayisi )
@@ -135,9 +130,7 @@ void  para_yatirma(int hesapno[],float bakiyeler[],int hesapSayisi,int islemYapi
 				}
 		}
 
-		
-	
-	
+
 	
 }
 
@@ -343,7 +336,8 @@ void menu(int hesapno[],char kullaniciadi[][30],int hesapSayisi,int kullaniciadi
 	    	
 	    	while(altsecenek!=1)
 	    	{
-	    		printf("buraya fonksiyon ekleyecegim var olan hesaplari goruntulemek icin\n\n");
+	    			ciktimusterilerin(hesapno,kullaniciadi,kullaniciadisayisi,kullaniciadiuzunlugu);
+
 	    		
 	    		printf("ana menuye donmek icn lutfen 1 basiniz\n\n");
 	    		scanf("%d",&altsecenek);
