@@ -3,6 +3,8 @@
 #include <math.h>
 #include <stdbool.h>
 #include <string.h>
+#include <time.h> 
+
 
    float bakiyeler[10]={500,600};
 
@@ -12,12 +14,17 @@
 void hesaplar(int hesapno[],int hesapSayisi )
 {
 	
-	int i,j;
+	int j;
 	
-	hesapno[0]=5000;
+srand(time(NULL));
 	for(j=0;j<hesapSayisi;j++)
 	 {
-	 	hesapno[j+1]=hesapno[j] + 1000;
+		
+
+	int random = 5000 + rand() % 8000;
+
+	 	hesapno[j]=random;
+
 	 }	
 		
 }         
@@ -362,7 +369,7 @@ int main()
 	int hesapSayisi=10;	
 	int kullaniciadiuzunlugu=30;
    int kullaniciadisayisi =2 ;
-	
+
 	hesaplar(hesapno,hesapSayisi);
 	kullaniciadlari(kullaniciadi,kullaniciadisayisi,kullaniciadiuzunlugu);
 	ciktimusterilerin(hesapno,kullaniciadi,kullaniciadisayisi,kullaniciadiuzunlugu);
